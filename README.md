@@ -1,0 +1,1 @@
+# kampan.primitiweb.cz
