@@ -1,0 +1,265 @@
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kampaň!</title>
+    <style type="text/css">
+        heading {
+            display: block;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        heading > h1 {
+            font-size: 500%;
+            margin: 0.5rem 0;
+        }
+        heading > div {
+            font-size: 300%;
+            max-width: 8em;
+            margin: 0 auto;
+        }
+        main {
+            display: block;
+            max-width: 40em;
+            margin: 0 auto;
+            font-size: 14pt;
+            line-height: 1.35;
+            padding-bottom: 5rem;
+        }
+        section > h1 {
+            font-size: 2.5em;
+        }
+        p.highlight {
+            padding-left: 2rem;
+            border-left: 10px gray solid;
+            font-size: 120%;
+        }
+        #cookies-bar {
+            background: black;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            max-height: 100%;
+            color: white;
+            font-family: sans-serif;
+            padding: 1.5rem;
+            box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5);
+        }
+        #cookies-bar-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #cookies-bar-text {
+            font-size: 12pt;
+        }
+        #cookies-bar-button > button {
+            font-size: 12pt;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            background: yellow;
+            color: black;
+            border: none;
+            border-radius: 5px;
+        }
+        #dialog {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        #dialog-inner {
+            margin: 0 auto;
+            width: 400px;
+            max-width: 100%;
+            height: 250px;
+            max-height: 350px;
+            background: white;
+            border: 1px darkgray solid;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        #dialog-text {
+            font-size: 18pt;
+            max-width: 12em;
+        }
+        #dialog-button > button {
+            background: navy;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            font-size: 16pt;
+        }
+    </style>
+</head>
+<body onload="setTimeout(function() { document.getElementById('dialog').style.display='block'; }, 10000)">
+    <heading>
+        <div>Toto je</div>
+        <h1>Kampaň!</h1>
+        <div>za jednodušší a&nbsp;slušnější web</div>
+    </heading>
+    <main>
+        <section>
+            <h1>Soukromí</h1>
+
+            <p>V době, kdy je naprosto běžné, že se nejen webové stránky a mobilní aplikace, ale dokonce
+                i antivirové programy (<a href="https://www.lupa.cz/aktuality/avast-za-miliardu-prodava-minoritu-v-jumpshotu-letos-se-zbavuje-uz-druhe-sekce/" target="_new">odkaz</a>)
+                snaží co nejlépe vytěžit data o svých uživatelích a zpeněžit je,
+                nastává čas k návratu gentlemanského chování na síť.
+            </p>
+
+            <h2>GDPR desatero</h2>
+            <ol>
+                <li>Nepokradeš uživatelské údaje</li>
+                <li>Informuješ, jak s údaji nakládáš, než uživatel začne cokoli vkládat</li>
+                <li>Ať už údaje užíváš k jednomu či více účelům, vyžádáš si souhlas pro každý z nich</li>
+                <li>K údajům umožníš pouze opodstatněný přístup oprávněným osobám</li>
+                <li>Budeš ctít, že i chování na internetu je osobní údaj</li>
+                <li>Bez svolení nebudeš chování uživatele analyzovat, ukládat, ani jinak sledovat</li>
+                <li>Umožníš vždy používat části služby, které nejsou závislé na svolení k nakládání s údaji</li>
+                <li>Budeš pamatovat, že i anonymizovaná a agregovaná data mohou být citlivá</li>
+                <li>Kde je to možné, budeš šifrovat, hashovat a "solit"</li>
+                <li>Pokud se něco pokazí a údaje uniknou, okamžitě o tom uživatele zpravíš</li>
+            </ol>
+            <p>
+                <small>
+                    Upozornění: Nejedná se právní výklad, berte prosím s rezervou.
+                </small>
+            </p>
+
+            <h2>Kdo nedělá nic špatného, nemusí nic skrývat</h2>
+            <p>
+                Starat se o své soukromí neznamená skrývat něco nekalého. Soukromí je jen svoboda rozhodovat,
+                kdo o nás bude co vědět.
+            </p>
+
+            <h2>Nebezpečí systémové názorové bubliny</h2>
+            <p>
+                Dnešní důmyslné statistické metody fungují tím lépe, čím více dat mají. Modely rozhodování člověka jsou
+                čím dál přesnější. Když budou mít dostatek informací, budou schopni odhadnout, jak budou kteří lidé
+                reagovat na jaké podněty a přizpůsobit tomu své reklamní a předvolební kampaně. Budou vědět, jaké
+                informace vám nabídnout a jaké zatajit, aby vás získali na svoji stranu.
+                (Pokud máte pocit, že nemám přílišnou důvěru ve svobodnou vůli člověka, máte pravdu.)
+            </p>
+            <p>
+                V krajním případě se budou sestavovat kampaně pro každého člověka na míru. Realita vnímaná jednotlivci
+                může být pak značně zkreslená.
+            </p>
+            <p class="highlight">
+                Poznávat svět objektivně můžeme jenom v takovém prostředí, kde o nás nikdo nemá dostatek informací na to,
+                aby mohl náš pohled na svět systematicky zkreslovat.
+            </p>
+
+            <h2>Soukromím nikoho neobtěžujete</h2>
+            <p>
+                Jestliže zvolíme tu nepraktickou definici, že svoboda jednoho končí tam, kde začíná svoboda druhého,
+                můžeme vyvodit, že omezování soukromí by bylo neopodstatněným omezením svobody.
+            </p>
+            <p class="highlight">
+                Není možné, abyste svým soukromím někoho obtěžovali.
+            </p>
+            <p>
+                Někoho může rozčilovat, že na vás něco neví, ale to je jeho problém.
+            </p>
+
+            <h2>Musíme obětovat soukromí za bezpečí?</h2>
+            <p>
+                Vysoké standardy ochrany soukromí samozřejmě nahrávají nejrůznějším pochybným živlům a zločincům
+                všeho druhu. Jejich kontrola i vypátrání je mnohem těžší. Může tedy znít rozumně omezit všeobecnou
+                míru soukromí a anonymity, abychom těmto lumpům znesnadnili jejich činnost. A zakázat také silné šifrování.
+            </p>
+            <p>
+                Nápad jistě dobrý. A najdeme jistě i spoustu dalších věcí, které padouchům usnadňují život.
+                Automatické pračky, krájený chléb, perforovaný toaletní papír. Ne, to by asi neprošlo.
+                Budeme muset zůstat pouze u toho soukromí. Toho se lidé vzdají snadněji než pohodlí.
+            </p>
+
+            <h2>Co lze dělat</h2>
+            <ul>
+                <li>
+                    Blokovat reklamy a sledovací prvky. (Ale pozor, i doplňky prohlížečů mohou být nebezpečné.)
+                    Například prohlížeč Firefox umožňuje snadno nastavit úroveň ochrany soukromí.
+                    (Pamatujete také, že správní uživatelé neblokují reklamy na webech, které chtějí podpořit.)
+                </li>
+                <li>
+                    I když to bolí, alespoň letmo zkusit pročítat podmínky užívání služeb, a když uvádějí,
+                    že data mohou být poskytnuta třetím stranám, rozmyslet, zda danou službu opravdu potřebujete,
+                    a jaké existují alternativy.
+                </li>
+                <li>
+                    Používat anonymní okna, čistit pravidelně cookies, případně využít služeb důvěryhodné VPN.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Design internetových stránek</h1>
+
+            <h2>Cena zbytečného kliku</h2>
+            <p>Kolikrát za den se průměrného člověka internet zeptá na zcela zbytečnou otázku? Kolik dialogů se zobrazí?</p>
+            <p>
+                Všechno toto vymyslet, naprogramovat a provozovat, to musí dát spoustu práce. A výsledkem je pouze
+                zvýšené opotřebování myší, plýtvání časem a zvyšování tlaku uživatelů. Prosím, nedělejme to.
+                Když některý z uživatelů bude náhodou nějakou z nabízených funkcí chtít, určitě si ji najde
+                i bez obtěžujícího dialogu.
+            </p>
+
+            <h2>Záleží na každém pixelu?</h2>
+            <p>
+                Designéry stojí spoustu úsilí to, že jejich web vypadá na různých zařízeních stejně.
+                Je to ale nutné? Stojí to za tu práci a přenesená data navíc? Sám nevím.
+            </p>
+
+            <h2>Kdo vybírá písmo</h2>
+            <p>
+                Mít na webu vlastní písmo je dnes téměř standard. Komu to ale prospěje? Je opravdu většina stránek
+                tak designově vypiplaných, že by je nevhodný font naprosto znemožnil?
+            </p>
+            <p>
+                A komu vlastně font slouží? Čtenářům, kteří čtou obsah, nebo grafikům, kteří vzhled ladí
+                nejčastěji jenom s „lorem ipsum“? Možná bychom měli raději uživatele naučit nastavit v prohlížeči
+                výchozí písmo tak, aby pro ně bylo pohodlné.
+            </p>
+        </section>
+        <section>
+            <h2>Odkazy</h2>
+            <ul>
+                <li><a href="https://gizmodo.com/c/goodbye-big-five" target="_new">Goodbye Big Five (en) - O životě bez velkých technologických firem</a></li>
+                <li><a href="https://www.idnes.cz/technet/internet/rusko-volby-dezinformace-analyza-facebook-internet-research-agency-trump-clintonova.A181218_182251_sw_internet_pka" target="_new">Článek na idnes o dezinformačních kampaních</a></li>
+                <li><a href="https://www.irozhlas.cz/zivotni-styl/spolecnost/martin-jan-stransky-neurologie-socialni-site-dopamin-lajk-mobily-videohry_1905281515_och" target="_new">Český rozhlas: Rozhovor s Martinem Janem Stránským o sociálních sítích</a></li>
+                <li><a href="http://www.cesky-jazyk.cz/citanka/karel-capek/posledni-soud-povidky-z-jedne-kapsy.html#axzz5vlYWlVG1" target="_new">Karel Čapek: Poslední soud</a></li>
+                <li><a href="https://video.info.cz/strunc/petrman-praktiky-googlu-mi-vyrazily-dech-existuji-slozky-o-nas-vsech-sleduji-nas-vsude-42125.html" target="_new">Info.cz: Petrman: Praktiky Googlu mi vyrazily dech.</a></li>
+                <li><a href="https://mlok5.gitlab.io/hui/" target="_new">Hovory s U.I.</a> a <a href="https://mlok5.gitlab.io/instance.html" target="_new">Instance</a> (povídky)</li>
+                <li><a href="http://neurazitelny.cz/kriticke-mysleni-uvod-do-rozpoznavani-kecu/" target="_new">Kritické myšlení – Úvod do rozpoznávání keců</a> (video)</li>
+            </ul>
+        </section>
+    </main>
+    <div id="cookies-bar">
+        <div id="cookies-bar-inner">
+            <div id="cookies-bar-text">
+                Zde jsme vám mohli ukázat, že GDPR buď nechápeme, nebo na něj zcela kašleme.
+            </div>
+            <div id="cookies-bar-button">
+                <button onclick="document.getElementById('cookies-bar').remove();">Budiž (k ničemu)</button>
+            </div>
+        </div>
+    </div>
+    <div id="dialog" style="display: none;">
+        <div id="dialog-inner">
+            <div id="dialog-text">
+                Zde jsme vám mohli položit naprosto zbytečnou otázku.
+            </div>
+            <div id="dialog-button">
+                <button onclick="document.getElementById('dialog').remove();">Fakt ne!</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
