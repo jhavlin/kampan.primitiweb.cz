@@ -11,8 +11,13 @@
             text-align: center;
         }
         heading > h1 {
-            font-size: 500%;
+            font-size: 420%;
             margin: 0.5rem 0;
+        }
+        @media (min-width: 800px) {
+            heading > h1 {
+                font-size: 550%;
+            }
         }
         heading > div {
             font-size: 300%;
@@ -31,7 +36,7 @@
             font-size: 2.5em;
         }
         p.highlight {
-            padding-left: 2rem;
+            padding-left: 1.5rem;
             border-left: 10px gray solid;
             font-size: 120%;
         }
@@ -41,11 +46,12 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            max-height: 100%;
+            max-width: 100%;
             color: white;
             font-family: sans-serif;
             padding: 1.5rem;
             box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
         }
         #cookies-bar-inner {
             display: flex;
@@ -54,6 +60,11 @@
         }
         #cookies-bar-text {
             font-size: 12pt;
+            margin-right: 1em;
+            flex: 1 1 auto;
+        }
+        #cookies-bar-button {
+            flex: 1 1 auto;
         }
         #cookies-bar-button > button {
             font-size: 12pt;
@@ -73,9 +84,10 @@
         #dialog-inner {
             margin: 0 auto;
             width: 400px;
-            max-width: 100%;
+            max-width: calc(100% - 10px);
             height: 250px;
             max-height: 350px;
+            box-sizing: border-box;
             background: white;
             border: 1px darkgray solid;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -247,7 +259,7 @@
                 Zde jsme vám mohli ukázat, že GDPR buď nechápeme, nebo na něj zcela kašleme.
             </div>
             <div id="cookies-bar-button">
-                <button onclick="document.getElementById('cookies-bar').remove();">Budiž (k ničemu)</button>
+                <button onclick="document.getElementById('cookies-bar').remove();">Budiž (k&nbsp;ničemu)</button>
             </div>
         </div>
     </div>
